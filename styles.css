@@ -1,8 +1,62 @@
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.content-area {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+body>header {
+  background-color: green;
+}
+
+.content-area>main {
+  background-color: orange;
+  flex-grow: 1;
+}
+
+.content-area>aside {
+  background-color: rgba(226, 145, 226, 0.5);
+  padding: 1rem;
+  position: absolute;
+  right: 0px;
+}
+
+body>footer {
+  background-color: turquoise;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 .box {
   width: 100px;
   height: 100px;
   background-color: thistle;
 }
 
-@media screen (min-width: 1000px) {
+@media (200px < width <399px) {
+  .box {
+    background-color: brown;
+    width: 200px;
+  }
+}
+
+@media (min-width: 400px) {
+  .box {
+    background-color: turquoise;
+  }
 }
